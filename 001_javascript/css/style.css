@@ -78,6 +78,9 @@ input, select{
     padding:0 1rem 1rem;
     border-bottom: 1px solid #ccc;
     font-weight: bold;
+    font-family: "Playwrite DK Loopet", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /*Forms*/
@@ -105,8 +108,8 @@ input, select{
     margin-top: 1rem;
 }
 
-/* toolbar */
-
+/* toolbar 
+/
 #toolbar {
     padding: 1rem;
     border-bottom: 1px solid #ccc;
@@ -144,6 +147,8 @@ input, select{
 #filter select {
     flex: 1;
 }
+
+*/
 
 /*List*/
 
