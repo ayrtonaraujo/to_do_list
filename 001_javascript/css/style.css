@@ -9,7 +9,7 @@
 }
 
 body {
-   background-color: #ffb668; 
+   background-color: #ffcc95; 
 }
 
 button {
@@ -52,22 +52,25 @@ input, select{
 
 /*To-do header*/
 
+.all-container {
+    max-width: 550px;
+    padding: 1.5rem;
+    margin: 3rem auto 0;
+    box-shadow: 7px 7px 15px #ea9547a8;
+    background-color: #ffff;
+    background-image: url(/001_javascript/img/bg.png);
+    
+    background-position: center;
+    background-size:550px;
+    border: 2px solid #294550;
+}
+
 .todo-container {
     max-width: 450px;
     margin: 1rem auto 0;
     background-color: rgb(255, 255, 255);
     padding: 1.5rem;
-    border: 2px solid #294550;
-}
-
-.all-container {
-    max-width: 550px;
-    padding: 1.5rem;
-    margin: 3rem auto 0;
-    box-shadow: 5px 5px 15px #2945503f;
-    background-image: url(/001_javascript/img/bg.png);
-    background-position: ce;
-    background-size: 650px;
+    border: 3px solid #294550;
 }
 
 .todo-container header {
@@ -95,9 +98,80 @@ input, select{
 
 .form-control input {
     margin-right: 0.3rem;
+    width: 100%;
 }
 
 #cancel-edit-button {
     margin-top: 1rem;
 }
 
+/* toolbar */
+
+#toolbar {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+
+#toolbar h4 {
+    margin-bottom: 0.5rem;
+}
+
+#search {
+    border-right: 1px solid #ddd;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form {
+    display: flex;
+}
+
+#search input {
+    width: 100%;
+    margin-right: .3rem;
+}
+
+#filter {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select {
+    flex: 1;
+}
+
+/*List*/
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    transition: 0.3s;
+    border-bottom: 1px solid #ddd;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: .9rem;
+}
+
+.todo button {
+    margin-left: 0.4rem;
+}
+
+.done {
+    background-color: #294550;
+}
+
+.done h3 {
+    color: #ffff;
+    text-decoration: line-through;
+    font-style: italic;
+
+}
